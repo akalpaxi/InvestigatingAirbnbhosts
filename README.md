@@ -24,6 +24,6 @@ Explain to potential users how to run/replicate your workflow. Touch upon, if ne
 Point interested users to any related literature and/or documentation.
 
 ## About
-In the context of the course Data Preparation and Workflow Management, we will study the impact of the host response time and the host membership time on the number of bookings made in two different cities in Italy: a more touristy, Venice, and a less touristy, Bergamo. Our team is composed of five members: Alexandra Duta, Renos Chatzistavrou, Aikaterini Kalpaxi, Polina Petkova, and Maria Vencheva.
+In the context of the course Data Preparation and Workflow Management, part of the MSc Marketing Analytics in Tilburg University, we will study the impact of the host response time and the host membership time on the number of bookings made in two different cities in Italy: a more touristy one, Venice, and a less touristy one, Bergamo. Our team is composed of five members: Alexandra Duta, Renos Chatzistavrou, Aikaterini Kalpaxi, Polina Petkova, and Maria Vencheva.
 
 
