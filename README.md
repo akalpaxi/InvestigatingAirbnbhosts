@@ -1,6 +1,6 @@
-#Hosts Qualities' booking impact across cities of Italy
+# Case Italy: Hosts Qualities' booking impact
 
-##A comparison in the number of bookings across Italy
+## A comparison in the number of bookings across Italy
 How does the host's response time and the host’s membership time affect the number of bookings across two different cities of Italy? Can it be a competitive advantage for hosts?
 We are going to take a deep dive through multiple datasets directly from AirBnB and find out the answer!  
 
