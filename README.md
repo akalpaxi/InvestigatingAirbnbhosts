@@ -3,7 +3,7 @@ How does the host_response_time and the host’s membership time affect the numb
 
 ## Motivation
 
-Motivate your research question or business problem. Clearly explain which problem is solved.
+
 
 ## Method and results
 
@@ -24,6 +24,6 @@ Explain to potential users how to run/replicate your workflow. Touch upon, if ne
 Point interested users to any related literature and/or documentation.
 
 ## About
+In the context of the course Data Preparation and Workflow Management, we will study the impact of the host response time and the host membership time on the number of bookings made in two different cities in Italy: a more touristy, Venice, and a less touristy, Bergamo. Our team is composed of five members: Alexandra Duta, Renos Chatzistavrou, Aikaterini Kalpaxi, Polina Petkova, and Maria Vencheva.
 
-Explain who has contributed to the repository. You can say it has been part of a class you've taken at Tilburg University.
 
