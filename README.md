@@ -1,16 +1,23 @@
-# Case Italy: Hosts Qualities' booking impact
+# 'Attractive' Hosts: a global AirBnB research
 
-## A comparison in the number of bookings across Italy
-How does the host's response time and the host’s membership time affect the number of bookings across two different cities of Italy? Can it be a competitive advantage for hosts?
-We are going to take a deep dive through multiple datasets directly from AirBnB and find out the answer!  
+## What is 'attractive' host?
+Attractive host refers to the host that due to specific qualities, traits and other factors is more preferable than the other competitive AirBnb hosts.
+## And why global?
+Simply because the world is more connected than ever before!
+Travelling has become a global trend and consequently travellers from Europe can now reach destinations in Asia and get to know the local culture, a couple from Latin America can safely book accommodation for their adventurous trip in the magical landscapes of Africa or a researcher from Australia can easily select a single room for his investigation journey to North America and the list is endless...
 
-## Motivation
-This investigation aims to compare the influence of the host's response time and the host's membership time on the number of bookings in AirBnBs located in two Italian cities, namely Venice and Bergamo. This cities have been particularily chosen because of the hard contrast in their popularity. More specifically, Venice has been recognized as the most popular city in Italy, while Bergamo has been recognized as a not yet a very popular destination. We believe that the variables under investigation (i.e.,host's response time and host's membership time on the website) have a strong impact on the number of bookings and we would like to futher analyze this.
+## Research Motivation
+As a result of this global connectivity and increased travelling frequency the pioneering platform of AirBnB has been established as the leader in online lodging, primarily homestays for vacation rentals and tourism activities with more than 2.8 million hosts(2021). Nevertheless, increased offer comes with increased competition and the hosts need to find new ways of attracting the people.
+The main purpose of this research is to provide usefull insight and tips to AirBnB's hosts in order to improve their overall performance and service delivery before the booking reservation. Additionally, we are going to compare 'cultural' tendencies for the most popular destinations of 2021 across different continents. 
 
+## Method and results
+
+## Repository overview
+## Usefull Sources
+litersture/links wtc
 ## About
-In the context of the course Data Preparation and Workflow Management, part of the MSc Marketing Analytics in Tilburg University, we will study the impact of host response time (i.e., how quickly a host responds to (potential) guests) and host membership time (i.e., for how long a host has been a member of the Airbnb site) on the number of bookings made in two different cities in Italy: a more touristy one, Venice, and a less touristy one, Bergamo. Our team is composed of five members: Alexandra Duta, Renos Chatzistavrou, Aikaterini Kalpaxi, Polina Petkova, and Maria Vencheva.
+In the context of the course Data Preparation and Workflow Management, part of the MSc Marketing Analytics in Tilburg University, we executed a research on the impact of hosts' factors (i.e., how quickly a host responds to (potential) guests) on the hosts' overall performance. Our data is collected from the most popular cities across continents for 2021 via(link).
+Our team is composed of five members: Alexandra Duta, Renos Chatzistavrou, Aikaterini Kalpaxi, Polina Petkova, and Maria Vencheva.
 https://github.com/topuserever
 https://github.com/polinapetkova
 https://github.com/AlexandraDuta
-
-
