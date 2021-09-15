@@ -16,8 +16,6 @@ The main purpose of this research is to provide usefull insight and tips to AirB
 ## Usefull Sources
 litersture/links wtc
 ## About
-In the context of the course Data Preparation and Workflow Management, part of the MSc Marketing Analytics in Tilburg University, we executed a research on the impact of hosts' factors (i.e., how quickly a host responds to (potential) guests) on the hosts' overall performance. Our data is collected from the most popular cities across continents for 2021 via(link).
-Our team is composed of five members: Alexandra Duta, Renos Chatzistavrou, Aikaterini Kalpaxi, Polina Petkova, and Maria Vencheva.
-https://github.com/topuserever
-https://github.com/polinapetkova
-https://github.com/AlexandraDuta
+In the context of the course [Data Preparation and Workflow Management](https://dprep.hannesdatta.com/), part of the [MSc Marketing Analytics](https://www.tilburguniversity.edu/education/masters-programmes/marketing-analytics) in [Tilburg University](https://www.tilburguniversity.edu/), we executed a research on the impact of hosts' factors (i.e., how quickly a host responds to (potential) guests) on the hosts' overall performance. Our data is collected from the most popular cities across continents for 2021 via(link).
+## Contributors
+Our team is composed of five members: [Alexandra Duta](https://github.com/AlexandraDuta), [Renos Chatzistavrou](https://github.com/topuserever), [Aikaterini Kalpaxi](https://github.com/akalpaxi), [Polina Petkova](https://github.com/polinapetkova), and [Maria Vencheva](https://github.com/MariaVelcheva).
