@@ -1,4 +1,3 @@
-@@ -1,44 +1,8 @@
 # 'Attractive' Hosts: a global AirBnB research
 
 
