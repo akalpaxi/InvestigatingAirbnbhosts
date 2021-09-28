@@ -1,10 +1,8 @@
-## A comparison in the number of bookings across Italy
-How does the host's response time and the host’s membership time affect the number of bookings in each city (Venice vs. Bergamo)?
 
-## Motivation
 
-This investigation aims to compare the influence of the host's response time and the host's membership time on the number of bookings in AirBnbs located in two Italian cities, namely Venice and Bergamo. This cities have been particularily chosen because of the hard contrast in their popularity. More specifically, Venice has been recognized as the most popular city in Italy, while Bergamo has been recognized as a not yet a very popular destination. We believe that the variables under investigation (i.e.,host's response time and host's membership time on the website) have a strong impact on the number of bookings and we would like to futher analyze this. 
+## Good Host vs Bad Host: What makes an "attractive" Airbnb host?
+Attractive host refers to the host that due to specific qualities, traits and other factors is more preferable than the other competitive AirBnb hosts.
 
-## About
-Explain who has contributed to the repository. You can say it has been part of a class you've taken at Tilburg University.
 
+## Contributors
+Our team is composed of five members: [Alexandra Duta](https://github.com/AlexandraDuta), [Renos Chatzistavrou](https://github.com/topuserever), [Aikaterini Kalpaxi](https://github.com/akalpaxi), [Polina Petkova](https://github.com/polinapetkova), and [Maria Vencheva](https://github.com/MariaVelcheva).
