@@ -23,5 +23,12 @@ listings_venice[ listings_venice == "N/A" ] <- NA
 listings_venice[ listings_venice == " "] <- NA
 
 # Convert to numeric:
-listings_venice$host_repsponse_rate <- as.numeric(listings_venice$host_repsponse_rate)
-listings_venice$host_acceptance_rate <- as.numeric(listings_venice$host_acceptance_rate)
+library(tidyverse)
+install.packages("hablar")
+library(tibble)
+library(hablar)
+
+listings_venice <- listings_venice %>% convert(num(host_response_rate:host_acceptance_rate))
+
+
+
