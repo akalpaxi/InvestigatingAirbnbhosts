@@ -12,4 +12,4 @@ download.file('http://data.insideairbnb.com/italy/veneto/venice/2021-08-06/data/
 calendar_venice <- read.csv(gzfile('raw_data/calendar.csv.gz'), as.is = TRUE)
 head(calendar_venice)
 View(calendar_venice)
-
+glimpse(calendar_venice)
