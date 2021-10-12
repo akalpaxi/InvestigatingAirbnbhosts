@@ -1,2 +1,2 @@
-listings_venice calendar_venice: 1download_data.R
-		R --vanilla < 1download_data.R
+listings_venice.csv.gz calendar.csv.gz: download_data.R
+    R --vanilla > download_data.R
