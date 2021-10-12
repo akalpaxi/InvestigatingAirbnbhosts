@@ -13,4 +13,3 @@ calendar_venice <- read.csv(gzfile('raw_data/calendar.csv.gz'), as.is = TRUE)
 head(calendar_venice)
 View(calendar_venice)
 glimpse(calendar_venice)
-
