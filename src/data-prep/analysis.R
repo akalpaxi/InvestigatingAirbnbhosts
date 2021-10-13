@@ -1,25 +1,23 @@
 ###-- ANALYSIS --###
-install.packages(broom)
+install.packages("broom")
 library(broom)
+library(ggplot2)
 
-ggplot(final_listings_venice, aes(x=response_rate, y=review_rating*20)) + geom_point() #we wanna see that in a scale 100X100
-ggplot(final_listings_venice, aes(x=very_fast_response, y=review_rating)) + geom_histogram() #we wanna see that in a scale 100X100
-#ANOVA ON WHETHER Number of REVIEWS AFFECTs RATINGS:
-aov <- lm(review_scores_rating ~ host_response_time, listings_venice)
-anova(aov)
-summary(aov)
-ggplot(listings_venice, aes(x=host_response_time, y=review_scores_rating)) + geom_point()
+# --- Regression Analysis --- #
 
-aov2 <- lm(review_rating ~ response_rate, final_listings_venice)
-anova(aov2)
-summary(aov2)
-ggplot(final_listings_venice, aes(x=response_rate, y=review_rating)) + geom_point()
-hist(final_listings_venice$response_rate)
+#We want to investigate the effect of host response time on booked percent
+#The independent variables in the model are the dummy variables (within_hour_response, within_few_hours_response, within_day_response) and the dependent variable is booked_percent
+lr_listings_venice <- lm(booked_percent ~ within_hour_response+within_few_hours_response+within_day_response, data=final_listings_venice)
 
-#host response time affects rating?
-response_aov <- lm(review_rating ~ very_fast_response+fast_response+average_response, clean_listings_venice)
-anova(response_aov)
-summary(response_aov)
+#View the results of the regression analysis
+summary(lr_listings_venice)
+
+#Checking linear model assumptions
+#Plots - Residuals vs Fitted, Normal Q-Q, and Scale Location
+listings_venice_res <- augment(lr_listings_venice)
+plot(lr_listings_venice)
+
+
 
 
 # test a plot to pdf:
