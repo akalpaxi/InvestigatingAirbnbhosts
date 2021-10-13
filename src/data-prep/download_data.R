@@ -1,6 +1,7 @@
 # download venice data
 ###-- DOWNLOAD DATA FILES FROM AIRBNB --###
 
+
 dir.create('raw_data/')
 
 download.file('http://data.insideairbnb.com/italy/veneto/venice/2021-08-06/data/listings.csv.gz', 'raw_data/listings_venice.csv.gz')
@@ -15,7 +16,9 @@ write.csv(calendar_venice,"raw_data/calendar_venice.csv")
 
 ###-- DOWNLOAD DATA FILES FROM GOOGLE DRIVE AS EXCEL --###
 
-#-Load Libraries
+#-Load packages
+install.packages("googledrive")
+install.packages("readr")
 library(googledrive)
 library(readr)
 
