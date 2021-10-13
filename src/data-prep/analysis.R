@@ -3,6 +3,7 @@ install.packages("broom")
 library(broom)
 library(ggplot2)
 
+
 # --- Regression Analysis --- #
 
 #We want to investigate the effect of host response time on booked percent
@@ -13,19 +14,12 @@ lr_listings_venice <- lm(booked_percent ~ within_hour_response+within_few_hours_
 summary(lr_listings_venice)
 
 #Checking linear model assumptions
-#Plots - Residuals vs Fitted, Normal Q-Q, and Scale Location
+#Plots - Residuals vs Fitted and Scale Location
 listings_venice_res <- augment(lr_listings_venice)
 plot(lr_listings_venice)
 
-
-
+#Testing normality assumption
+ggplot(listings_venice_res, aes(.resid)) + geom_histogram(aes(y = ..density..), binwidth = 5) + stat_function(fun = dnorm, args = list(mean = mean(listings_venice_res$.resid), sd = sd(listings_venice_res$.resid)), color="red", size=2)
 
 # test a plot to pdf:
-pdf("output/test_plot")
-plot(x = final_listings_venice$very_fast_response, 
-     y = final_listings_venice$booked_percent, 
-     type = "l", 
-     xlab = "Very fast response",
-     ylab = "Booked percentage", 
-     main = "Just a test")
-dev.off()
+ggsave("output/plot_regression.pdf")
