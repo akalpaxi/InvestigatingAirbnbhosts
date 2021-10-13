@@ -1,7 +1,5 @@
 ###-- DATA MANIPULATION WITH DPLYR --###
 
-library(tidyverse)
-library(dplyr)
 
 #-Creating dummy variable for host_response_time
 #-Base level for the dummy variable: response_within_a_few_days 
@@ -23,12 +21,14 @@ temp_listings_merged$host_response_time[(temp_listings_merged$host_response_time
 temp_listings_merged$host_response_time[(temp_listings_merged$host_response_time) == "within a day"] <- 3
 temp_listings_merged$host_response_time[(temp_listings_merged$host_response_time) == "a few days or more"] <- 4
 
-#-Convert the variable to numeric
+#-Load packages
+install.packages("tibble")
 install.packages("hablar")
 library(tibble)
 library(hablar)
-temp_listings_merged <- temp_listings_merged %>% convert(num(host_response_time))
 
+#-Convert the variable to numeric
+temp_listings_merged <- temp_listings_merged %>% convert(num(host_response_time))
 agg_host_response_time <- temp_listings_merged %>% group_by(host_id) %>% summarize(response_time = mean(host_response_time))
 
 #-Combine them with inner join
@@ -49,9 +49,13 @@ final_listings_venice$booked_percent <- ((final_listings_venice$booked_no)/(fina
 #-Data frame ready for viewing
 View(final_listings_venice)
 
-#-Create an output file and save the final data frame as csv and Excel file in there
+#-Create an output file and save the final data frame as csv
 dir.create("output/")
 write.csv(final_listings_venice,"output/final_listings_venice.csv")
+
+#-Load packages
 install.packages("writexl")
 library("writexl")
+
+#-Save as Excel
 write_xlsx(final_listings_venice, "output/final_listings_venice.xlsx")
