@@ -1,4 +1,4 @@
-### ANALYSIS
+###-- ANALYSIS --###
 install.packages(broom)
 library(broom)
 
@@ -15,9 +15,19 @@ anova(aov2)
 summary(aov2)
 ggplot(final_listings_venice, aes(x=response_rate, y=review_rating)) + geom_point()
 hist(final_listings_venice$response_rate)
-hist(final_listings_venice$)
 
 #host response time affects rating?
 response_aov <- lm(review_rating ~ very_fast_response+fast_response+average_response, clean_listings_venice)
 anova(response_aov)
 summary(response_aov)
+
+
+# test a plot to pdf:
+pdf("output/test_plot")
+plot(x = final_listings_venice$very_fast_response, 
+     y = final_listings_venice$booked_percent, 
+     type = "l", 
+     xlab = "Very fast response",
+     ylab = "Booked percentage", 
+     main = "Just a test")
+dev.off()
