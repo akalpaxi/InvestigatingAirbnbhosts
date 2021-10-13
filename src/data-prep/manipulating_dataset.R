@@ -1,17 +1,24 @@
 ###-- DATA MANIPULATION WITH DPLYR --###
 
 
+#-Load packages
+library(tidyverse)
+
+#-Calling object listings_merged_clean
+listings_merged_clean <- read.csv('temp/listings_merged_clean.csv')
+listings_merged <- read.csv('temp/listings_merged.csv')
+
 #-Creating dummy variable for host_response_time
 #-Base level for the dummy variable: response_within_a_few_days 
-listings_merged$within_hour_resp <- ifelse(listings_merged$host_response_time == "within an hour", 1, 0)
-listings_merged$within_fewhours_resp <- ifelse(listings_merged$host_response_time == "within a few hours", 1, 0) 
-listings_merged$within_day_resp <- ifelse(listings_merged$host_response_time == "within a day", 1, 0)
+listings_merged_clean$within_hour_resp <- ifelse(listings_merged_clean$host_response_time == "within an hour", 1, 0)
+listings_merged_clean$within_fewhours_resp <- ifelse(listings_merged_clean$host_response_time == "within a few hours", 1, 0) 
+listings_merged_clean$within_day_resp <- ifelse(listings_merged_clean$host_response_time == "within a day", 1, 0)
 
 #-Aggregate and summarize: we group by hosts and then create a new variable that puts the total number of reviews per host. and the average
-agg_response_time <- listings_merged %>% group_by(host_id) %>%
+agg_response_time <- listings_merged_clean %>% group_by(host_id) %>%
   summarize(within_hour_response = mean(within_hour_resp), within_few_hours_response = mean(within_fewhours_resp), within_day_response = mean(within_day_resp))
-agg_booked_no <- listings_merged %>% group_by(host_id) %>% summarize(booked_no = sum(booked_number))
-agg_tot_number <- listings_merged %>% group_by(host_id) %>% summarize(total = sum(n))
+agg_booked_no <- listings_merged_clean %>% group_by(host_id) %>% summarize(booked_no = sum(booked_number))
+agg_tot_number <- listings_merged_clean %>% group_by(host_id) %>% summarize(total = sum(n))
 
 #-Transform text to numeric so to aggregate host_response_time
 #-Creating a copy data frame to make the transformation  
@@ -22,8 +29,6 @@ temp_listings_merged$host_response_time[(temp_listings_merged$host_response_time
 temp_listings_merged$host_response_time[(temp_listings_merged$host_response_time) == "a few days or more"] <- 4
 
 #-Load packages
-install.packages("tibble")
-install.packages("hablar")
 library(tibble)
 library(hablar)
 
@@ -54,7 +59,6 @@ dir.create("output/")
 write.csv(final_listings_venice,"output/final_listings_venice.csv")
 
 #-Load packages
-install.packages("writexl")
 library("writexl")
 
 #-Save as Excel

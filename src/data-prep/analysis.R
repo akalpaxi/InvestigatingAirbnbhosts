@@ -1,10 +1,13 @@
 ###-- ANALYSIS --###
-install.packages("broom")
+
+
 library(broom)
 library(ggplot2)
 
-
 # --- Regression Analysis --- #
+
+#-Calling object final_listings_venice
+final_listings_venice <- read.csv('output/final_listings_venice.csv')
 
 #We want to investigate the effect of host response time on booked percent
 #The independent variables in the model are the dummy variables (within_hour_response, within_few_hours_response, within_day_response) and the dependent variable is booked_percent
