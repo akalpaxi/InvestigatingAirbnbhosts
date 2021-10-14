@@ -1,4 +1,4 @@
-# 'Attractive' Hosts: a global AirBnB research
+# The effect of Airbnb host response time on bookings
 
 
 ## Good Host vs Bad Host: What makes an "attractive" Airbnb host?
@@ -16,33 +16,43 @@ Travelling has become a global trend and consequently travelers from Europe can 
 ## Research Motivation
 As a result of this global connectivity and increased travelling frequency the pioneering platform of AirBnB has been established as the leader in online lodging, primarily home stays for vacation rentals and tourism activities with more than 2.8 million hosts(2021). Nevertheless, increased offer comes with increased competition and the hosts need to find new ways of attracting the people.
 
-By assessing whether the response time and membership time affect the number of bookings that the hosts have, we will provide useful insight and tips to AirBnB's hosts in order to improve their overall performance and service delivery.
+By assessing whether the response time affect the number of bookings that the hosts have, we will provide useful insight and tips to AirBnB's hosts in order to improve their overall performance and service delivery.
 
 
 __Why it matters?__
-* Membership time is important for potential guests as they usually evaluate the host based on this characteristic.
 * Greater response time leads to higher chance to become a *Superhost* on the platform!
 * By responding faster, hosts can remove customers' anxiety about the booking process! Some guests contact more than one listing owner at the same time and it is crutial to respond as quickly as possible!
 * Delay replies might lead to lost revenue. 
 * Response rate affect hosts' search placement. 
 
-**Quicker response time is one of the most important elements of good hosts**
+**Quicker response time is one of the most important elements of being a good hosts**
 
 
 ## Method and results
+The method that was used to investigate whether there is a relationship between the host response time and the number of bookings of the host is **linear regression analysis**. Linear regression analysis is used to explain the relationship between one dependent variable and one or more independent variables. This research method will show whether there is a positive/negative effect of host response time on number of bookings or if there is no effect at all. 
+
+### Summary of the results
 
 ## Repository overview
+This repository consists of  **NUMBER OF folders** and **NUMBER OF files**. The data that was used for this particular research has been stored in Google Drive and can be downloaded by following the download_data.R file that we have added. Moreover, we have added another option for downloading the data (also included in the download_data.R file) by using [Inside Airbnb](http://insideairbnb.com/get-the-data.html) website. However, note that the data on the website might have changed over time. Therefore, we recommend using the data stored in Google Drive. 
+
+## Instructions
+For this research we used R and RStudio software. Useful information about the software and guidelines about the installation process can be found [here](https://tilburgsciencehub.com/building-blocks/configure-your-computer/statistics-and-computation/r/). Moreover, to run the automated pipeline, you should install Make which you can do by following the guidelines provided [here](https://tilburgsciencehub.com/building-blocks/configure-your-computer/automation-and-workflows/make/). 
+
+Additionally, the different library packages that should be used in RStudio are provided in each of the files. Without installing these packages, you cannot run the codes. 
 
 ## Usefull Sources
 litersture/links wtc
 
 
 ## About
-In the context of the course [Data Preparation and Workflow Management](https://dprep.hannesdatta.com/), part of the [MSc Marketing Analytics](https://www.tilburguniversity.edu/education/masters-programmes/marketing-analytics) in [Tilburg University](https://www.tilburguniversity.edu/), we executed a research on the impact of hosts' factors (i.e., how quickly a host responds to (potential) guests) on the hosts' overall performance. Our data is collected from the most popular cities across continents for 2021 via(link).
+In the context of the course [Data Preparation and Workflow Management](https://dprep.hannesdatta.com/), part of the [MSc Marketing Analytics](https://www.tilburguniversity.edu/education/masters-programmes/marketing-analytics) in [Tilburg University](https://www.tilburguniversity.edu/), we executed a research on the impact of hosts' factors (i.e., how quickly a host responds to (potential) guests) on the hosts' overall performance. Our data is collected from the most popular cities across continents for 2021 via [Inside Airbnb](http://insideairbnb.com/get-the-data.html).
 
 
 ## Contributors
 Our team is composed of five members: [Alexandra Duta](https://github.com/AlexandraDuta), [Renos Chatzistavrou](https://github.com/topuserever), [Aikaterini Kalpaxi](https://github.com/akalpaxi), [Polina Petkova](https://github.com/polinapetkova), and [Maria Vencheva](https://github.com/MariaVelcheva).
+
+
 
 
 
