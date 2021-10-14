@@ -34,7 +34,7 @@ The method that was used to investigate whether there is a relationship between 
 ### Summary of the results
 
 ## Repository overview
-This repository consists of  **NUMBER OF folders** and **NUMBER OF files**. The data that was used for this particular research has been stored in Google Drive and can be downloaded by following the download_data.R file that we have added. Moreover, we have added another option for downloading the data (also included in the download_data.R file) by using [Inside Airbnb](http://insideairbnb.com/get-the-data.html) website. However, note that the data on the website might have changed over time. Therefore, we recommend using the data stored in Google Drive. 
+This repository consists of 3 folders and **NUMBER OF files**. The data that was used for this particular research can be downloaded by using the download_data.R file which uses the data uploaded on the [Inside Airbnb](http://insideairbnb.com/get-the-data.html) website. 
 
 ## Instructions
 For this research we used R and RStudio software. Useful information about the software and guidelines about the installation process can be found [here](https://tilburgsciencehub.com/building-blocks/configure-your-computer/statistics-and-computation/r/). Moreover, to run the automated pipeline, you should install Make which you can do by following the guidelines provided [here](https://tilburgsciencehub.com/building-blocks/configure-your-computer/automation-and-workflows/make/). 
@@ -51,18 +51,6 @@ In the context of the course [Data Preparation and Workflow Management](https://
 
 ## Contributors
 Our team is composed of five members: [Alexandra Duta](https://github.com/AlexandraDuta), [Renos Chatzistavrou](https://github.com/topuserever), [Aikaterini Kalpaxi](https://github.com/akalpaxi), [Polina Petkova](https://github.com/polinapetkova), and [Maria Vencheva](https://github.com/MariaVelcheva).
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
