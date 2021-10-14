@@ -39,7 +39,18 @@ This repository consists of 3 folders and **NUMBER OF files**. The data that was
 ## Instructions
 For this research we used R and RStudio software. Useful information about the software and guidelines about the installation process can be found [here](https://tilburgsciencehub.com/building-blocks/configure-your-computer/statistics-and-computation/r/). Moreover, to run the automated pipeline, you should install Make which you can do by following the guidelines provided [here](https://tilburgsciencehub.com/building-blocks/configure-your-computer/automation-and-workflows/make/). 
 
-Additionally, the different library packages that should be used in RStudio are provided in each of the files. Without installing these packages, you cannot run the codes. 
+Additionally, different packages should be installed in RStudio in order to run the codes. For convenience the following code snippet can be copied and pasted into RStudio:
+
+```
+install.packages("tidyverse")
+install.packages("dplyr")
+install.packages("tibble")
+install.packages("hablar")
+install.packages("writexl")
+install.packages("broom")
+install.packages("ggplot2")
+install.packages("xtable")
+```
 
 ## Usefull Sources
 litersture/links wtc
