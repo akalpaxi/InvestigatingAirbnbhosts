@@ -1,3 +1,13 @@
+###-- SETUP FOLDERS & PACKAGES --###
+
+
+#-Folders
+dir.create('raw_data/')
+dir.create('temp/')
+dir.create('output/')
+#-Packages
+install.packages("tidyverse",repos = "http://cran.us.r-project.org"); install.packages("dplyr",repos = "http://cran.us.r-project.org"); install.packages("tibble",repos = "http://cran.us.r-project.org"); install.packages("hablar",repos = "http://cran.us.r-project.org"); install.packages("writexl",repos = "http://cran.us.r-project.org"); install.packages("broom",repos = "http://cran.us.r-project.org"); install.packages("ggplot2",repos = "http://cran.us.r-project.org"); install.packages("madelsummary",repos = "http://cran.us.r-project.org")
+
 ###-- DOWNLOAD DATA FILES FROM AIRBNB --###
 
 
