@@ -3,8 +3,8 @@
 dir.create('temp/')
 
 #-Load packages
-library(tidyverse)
-library(dplyr)
+install.packages("tidyverse",repos = "http://cran.us.r-project.org"); install.packages("dplyr",repos = "http://cran.us.r-project.org")
+library(tidyverse);library(dplyr)
 
 listings_raw <- read.csv('raw_data/listings_raw.csv')
 calendar_raw <- read.csv('raw_data/calendar_raw.csv')
