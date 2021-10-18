@@ -12,5 +12,5 @@ temp/listings_merged_clean.csv: src/data-prep/3converting_variables.R temp/listi
 output/final_listings_venice.csv output/final_listings_venice.xlsx: src/data-prep/4manipulating_dataset.R temp/listings_merged_clean.csv
 		R --vanilla < src/data-prep/4manipulating_dataset.R
 		
-output/plot_relationship.pdf output/plot_normality_assumption.pdf output/results.html: src/data-prep/6analysis.R output/final_listings_venice.csv
-		R --vanilla < src/data-prep/6analysis.R
+output/plot_relationship.pdf output/plot_normality_assumption.pdf output/results.html: src/data-prep/5analysis.R output/final_listings_venice.csv
+		R --vanilla < src/data-prep/5analysis.R
