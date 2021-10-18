@@ -39,8 +39,25 @@ Within_few_hours_response is another dummy variable which was created based on t
 Within_day_response is a third variable which was created based on the response time variable. When the value is 1, the response time of the host is within a day. 
 The base level used for the dummy variables is "within_few_days". This means that whenever the three above-mentioned dummy variables are equal to 0, the response time of the host is within a few days. 
 
+###Booked 
+This a variable is a recoded dummy from the available variable. The number 1 means that the lising is booked, in other words, not avaliable on the specific date. While 0 shows that the lisiting is avaliable (not booked) at a given date. 
+
 ###Booked_no
-The booked number variable is a numeric variable that represents the 
+The booked number variable is a numeric variable that represents aggregation by the listings when the dummy booked is summed. As the listings appear more than once in the raw dataset, we use this variable to represent the number of nights for which the particular listing is booked. 
+
+###Total
+The variable is a numeric variable that shows the total number of nights for which the listing is available on the Airbnb platform. This includes both booked nights and available nights.
+
+###Booked_percent
+This is the percentage of nights booked. It was calculated by dividing the number of nights when the listing was booked on the total number of nights available on the website. In other words, booked_no divided by total. 
+
+
+## Regression analysis visualization 
+
+```{r, echo = FALSE, fig.align='center', out.height='40%'}
+knitr::include_graphics('output/plot_relationship.pdf')
+```
+
 
 ## R Markdown
 
