@@ -66,10 +66,8 @@ install.packages("broom")
 install.packages("ggplot2")
 install.packages("xtable")
 install.packages("stargazer")
+install.packages("knitr")
 ```
-
-## Usefull Sources
-litersture/links wtc
 
 
 ## About
