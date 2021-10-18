@@ -58,23 +58,11 @@ This is the percentage of nights booked. It was calculated by dividing the numbe
 knitr::include_graphics('output/plot_relationship.pdf')
 ```
 
-From the plot, it is noticable that when the host responses within an hour, it is more 
-## R Markdown
+From the plot, it is noticable that the listing is more likely to get booked when the host replies within an hour compared to the other response times. When the response is within a few days or more, more listings are not booked. 
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(df)
+## Normality assumption checked
+```{r, echo = FALSE, fig.align='center', out.height='40%'}
+knitr::include_graphics('output/plot_normality_assumption.pdf')
 ```
 
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-hist(df$beds)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+The plot above shows that there is no normal distribution of the variance of the residuals. However, this is not relevant in our case as the sample is big enough. 
