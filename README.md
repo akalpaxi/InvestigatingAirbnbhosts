@@ -47,7 +47,7 @@ This repository consists of 3 folders and 4 files. The data that was used for th
 Running the files separately one after each other is more time-consuming and might result in errors if the correct order is not followed. Therefore, a better solution is to run all codes automatically. How to do that? Open the makefile and write "make" in the command prompt. All files will be automatically run for you in the correct order.
 
 If you are wondering what are the other files in the repository, here is a quick guide:
-* Temp folder - consists of temporary files - the datasets "listings" and "calendar" with removed columns that are not needed for the analysis; the merged dataset ("listings" and "calendar") and the final dataset, where the data is cleaned
+* Temp folder - consists of temporary files - the final dataset, where the data is cleaned is included
 * Gitignore file - lists the files that do not need to be saved
 * RMarkdown - found in the source (scr) folder - used for explanation of the variables in the dataset and presenting graphs and plots from the analysis
 * Readme - the file you are reading at the moment that summarizes the whole research and provides information about what is included in this repository
