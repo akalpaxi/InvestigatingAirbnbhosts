@@ -1,17 +1,46 @@
 ---
-title: "Exploration of Venice"
-author: "Hannes Datta"
-date: "9/16/2021"
-output: html_document
+title: "The effect of Airbnb host response time on bookings"
+author: "Aikaterini Kalpaxi, Alexandra Duta, Maria Velcheva, Polina Petkova, and Renos Chatzistavrou,"
+output:
+html_document: default
+pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
+```{r, echo = FALSE}
+library(readr)
+library(modelsummary)
+library(tibble)
+library(hablar)
+library(tidyverse)
+library(dplyr)
+```
 
 df <- read.csv(gzfile('data/listings_venice.csv.gz'), as.is = TRUE)
 
-```
+
+# Introduction
+We started by cleaning the raw datasets. Firstly, we removed the variables which were not relevant to our research. Secondly, we merged the datasets into one. The description of each variable can be seen below. Using the cleaned data, we performed a regression analysis. The results are shown and described below. We also checked the assumptions for linear regression: independence, normality, and homoskedasticity.
+
+## Description of variables - our cleaned dataset includes the following variables
+
+###Host_id
+Host_id is a numeric variable that represents a unique id number of each host on the platform. 
+
+###Within_hour_response
+Within_hour_response is a dummy variable which was created based on the response time variable. When the value is 1, the response time of the host is within one hour. 
+
+###Within_few_hours_response
+Within_few_hours_response is another dummy variable which was created based on the response time variable. When the value is 1, the response time of the host is within a few hours.
+
+###Within_day_response
+Within_day_response is a third variable which was created based on the response time variable. When the value is 1, the response time of the host is within a day. 
+The base level used for the dummy variables is "within_few_days". This means that whenever the three above-mentioned dummy variables are equal to 0, the response time of the host is within a few days. 
+
+###Booked_no
+The booked number variable is a numeric variable that represents the 
 
 ## R Markdown
 
