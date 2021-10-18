@@ -58,7 +58,7 @@ This is the percentage of nights booked. It was calculated by dividing the numbe
 knitr::include_graphics('output/plot_relationship.pdf')
 ```
 
-
+From the plot, it is noticable that when the host responses within an hour, it is more 
 ## R Markdown
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
